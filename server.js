@@ -7,4 +7,4 @@ const server = http.createServer(app);
 
 server.listen(port);
 
-console.log(`FoodMap server listening at http://localhost:${port}`);
+console.log(`SimCareer server listening at http://localhost:${port}`);

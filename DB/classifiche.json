@@ -1,0 +1,134 @@
+{
+  "campionati": [
+    {
+      "id": "0",
+      "nome": "Leon Supercopa",
+      "logo": "logo-champ-0.png",
+      "classifica-piloti": [
+        {
+          "nome": "Roberto Cosi",
+          "team": "Busters eRacing Team",
+          "auto": "Seat Leon",
+          "punti": 50
+        },
+        {
+          "nome": "Giacomo Lapadula",
+          "team": "Naja Racing Italia",
+          "auto": "Seat Leon",
+          "punti": 34
+        },
+        {
+          "nome": "Andrea Crespi",
+          "team": "Handy Racing Team",
+          "auto": "Seat Leon",
+          "punti": 21
+        },
+        {
+          "nome": "Gennaro Deiulis",
+          "team": "Team SSD",
+          "auto": "Seat Leon",
+          "punti": 12
+        },
+        {
+          "nome": "Fabio Narduzzo",
+          "team": "Busters eRacing Team",
+          "auto": "Seat Leon",
+          "punti": 32
+        },
+        {
+          "nome": "Roberto Contino",
+          "team": "Handy Racing Team",
+          "auto": "Seat Leon",
+          "punti": 25
+        }
+      ],
+      "classifica-team": [
+        {
+          "team": "Busters eRacing Team",
+          "auto": "Seat Leon",
+          "punti": 82
+        },
+        {
+          "team": "Naja Racing Italia",
+          "auto": "Seat Leon",
+          "punti": 34
+        },
+        {
+          "team": "Handy Racing Team",
+          "auto": "Seat Leon",
+          "punti": 46
+        },
+        {
+          "team": "Team SSD",
+          "auto": "Seat Leon",
+          "punti": 12
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "nome": "International TCT",
+      "logo": "logo-champ-1.png",
+      "classifica-piloti": [
+        {
+          "nome": "Gianluca De Matteo",
+          "team": "Busters eRacing Team",
+          "auto": "Honda Civic",
+          "punti": 87
+        },
+        {
+          "nome": "Claudio Gasperini",
+          "team": "Panzer Team",
+          "auto": "Peugeot 308",
+          "punti": 42
+        },
+        {
+          "nome": "Marco Mazzetti",
+          "team": "Handy Racing Team",
+          "auto": "VW Golf",
+          "punti": 68
+        },
+        {
+          "nome": "Dario Raffaeta",
+          "team": "Indipendente",
+          "auto": "Alfa Romeo Giulietta",
+          "punti": 10
+        },
+        {
+          "nome": "Ugo Federico Bagnasco",
+          "team": "Busters eRacing Team",
+          "auto": "Honda Civic",
+          "punti": 41
+        },
+        {
+          "nome": "Enrico Sancini",
+          "team": "Handy Racing Team",
+          "auto": "VW Golf",
+          "punti": 54
+        }
+      ],
+      "classifica-team": [
+        {
+          "team": "Busters eRacing Team",
+          "auto": "Honda Civic",
+          "punti": 128
+        },
+        {
+          "team": "Panzer Team",
+          "auto": "Peugeot 308",
+          "punti": 42
+        },
+        {
+          "team": "Handy Racing Team",
+          "auto": "VW Golf",
+          "punti": 122
+        },
+        {
+          "team": "Indipendente",
+          "auto": "Alfa Romeo Giulietta",
+          "punti": 10
+        }
+      ]
+    }
+  ]
+}

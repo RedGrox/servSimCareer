@@ -1,0 +1,175 @@
+{
+  "campionati": [
+    {
+      "id": "0",
+      "nome": "Leon Supercopa",
+      "logo": "logo-champ-0.png",
+      "calendario": [
+        {
+          "seq": "1",
+          "data": "04/07/2019",
+          "circuito": "Jerez"
+        },
+        {
+          "seq": "2",
+          "data": "11/07/2019",
+          "circuito": "Barcellona"
+        },
+        {
+          "seq": "3",
+          "data": "18/07/2019",
+          "circuito": "Valencia"
+        },
+        {
+          "seq": "4",
+          "data": "25/07/2019",
+          "circuito": "Portimao"
+        }
+      ],
+      "impostazioni-gioco": [
+        {
+          "tipo": "Bandiere",
+          "valore": "Solo nere"
+        },
+        {
+          "tipo": "Consumo carburante",
+          "valore": "Normale"
+        },
+        {
+          "tipo": "Consumo gomme",
+          "valore": "Normale"
+        },
+        {
+          "tipo": "Aiuti alla guida",
+          "valore": "Frizione automatica"
+        }
+      ],
+      "lista-auto": "Seat Leon",
+      "piloti-iscritti": [
+        {
+          "nome": "Roberto Cosi",
+          "team": "Busters eRacing Team",
+          "auto": "Seat Leon"
+        },
+        {
+          "nome": "Giacomo Lapadula",
+          "team": "Naja Racing Italia",
+          "auto": "Seat Leon"
+        },
+        {
+          "nome": "Andrea Crespi",
+          "team": "Handy Racing Team",
+          "auto": "Seat Leon"
+        },
+        {
+          "nome": "Gennaro Deiulis",
+          "team": "Team SSD",
+          "auto": "Seat Leon"
+        },
+        {
+          "nome": "Fabio Narduzzo",
+          "team": "Busters eRacing Team",
+          "auto": "Seat Leon"
+        },
+        {
+          "nome": "Roberto Contino",
+          "team": "Handy Racing Team",
+          "auto": "Seat Leon"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "nome": "International TCT",
+      "logo": "logo-champ-1.png",
+      "calendario": [
+        {
+          "seq": "1",
+          "data": "30/01/2020",
+          "circuito": "Sepang"
+        },
+        {
+          "seq": "2",
+          "data": "13/02/2020",
+          "circuito": "Buriram"
+        },
+        {
+          "seq": "3",
+          "data": "27/02/2020",
+          "circuito": "Suzuka"
+        },
+        {
+          "seq": "4",
+          "data": "12/03/2020",
+          "circuito": "Zhejiang"
+        },
+        {
+          "seq": "5",
+          "data": "26/03/2020",
+          "circuito": "Zandvoort"
+        },
+        {
+          "seq": "6",
+          "data": "09/04/2020",
+          "circuito": "Hungaroring"
+        },
+        {
+          "seq": "7",
+          "data": "23/05/2020",
+          "circuito": "Adria"
+        }
+      ],
+      "impostazioni-gioco": [
+        {
+          "tipo": "Bandiere",
+          "valore": "Nere e Blu"
+        },
+        {
+          "tipo": "Consumo carburante",
+          "valore": "Normale"
+        },
+        {
+          "tipo": "Consumo gomme",
+          "valore": "Normale"
+        },
+        {
+          "tipo": "Aiuti alla guida",
+          "valore": "Frizione automatica, ABS"
+        }
+      ],
+      "lista-auto": "VW Golf, Honda Civic, Peugeot 308, Hyundai i30n, Alfa Romeo Giulietta",
+      "piloti-iscritti": [
+        {
+          "nome": "Gianluca De Matteo",
+          "team": "Busters eRacing Team",
+          "auto": "Honda Civic"
+        },
+        {
+          "nome": "Claudio Gasperini",
+          "team": "Panzer Team",
+          "auto": "Peugeot 308"
+        },
+        {
+          "nome": "Marco Mazzetti",
+          "team": "Handy Racing Team",
+          "auto": "VW Golf"
+        },
+        {
+          "nome": "Dario Raffaeta",
+          "team": "Indipendente",
+          "auto": "Alfa Romeo Giulietta"
+        },
+        {
+          "nome": "Ugo Federico Bagnasco",
+          "team": "Busters eRacing Team",
+          "auto": "Honda Civic"
+        },
+        {
+          "nome": "Enrico Sancini",
+          "team": "Handy Racing Team",
+          "auto": "VW Golf"
+        }
+      ]
+    }
+  ]
+}
