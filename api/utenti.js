@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-//get all users
+//get users
 /*
   request example:
   {
@@ -64,7 +64,136 @@ router.get('/',(req,res,next)=>{
       }
     }
   });
+//insert a user
+/*
+  post example:
+  [
+    {
+    "id":"0",
+    "mail":"paolorossi@mail.com",
+    "password":"password",
+    "nome":"Paolo",
+    "cognome":"Rossi",
+    "img":"",
+    "numeroGara":"5",
+    "circuitoPreferito":"",
+    "circuitoOdiato":"",
+    "autoPreferita":""
+    }
+  ]
+*/
+router.post('/',(req,res,next)=>{
+  let utenti=getUtenti();
+  let bodyReq=req.body;
+  let trueCounter=false;
+  let arrStatus=[];
+  for (let i = 0; i < bodyReq.length; i++) {
+    if(existIdUt(bodyReq[i].id,utenti)==-1&&existMail(bodyReq[i].mail,utenti)==-1)
+    {
+      utenti.push(bodyReq[i]);
+      fs.writeFileSync('DB/utenti.json',JSON.stringify(utenti,null,2),'utf8');
+      trueCounter=true;
+      arrStatus.push(true);
+    }else{
+      arrStatus.push(false);
+    }    
+  }
+  if(trueCounter==true)
+  {
+    res.status(200).json(arrStatus);
+  }else{
+    res.status(400).json(arrStatus);
+  }
+});
 
+/*delete example
+  {
+    "mailOrId"=1, //mail=0, id=1
+    "arg"=[1,25,3]
+  }
+*/
+router.delete('/',(req,res,next)=>{
+  let utenti=getUtenti();
+  let bodyReq=req.body;
+  let trueCounter=false;
+  let arrStatus=[];
+  if(bodyReq.mailOrId==0)
+  {
+    for (let i = 0; i < bodyReq.arg.length; i++) {
+      let index=existMail(bodyReq.arg[i],utenti);
+      if(index!=-1)
+      {
+        utenti.splice(index,1);
+        trueCounter=true;
+        arrStatus[i]=true;
+      }else{
+        arrStatus[i]=false;
+      }      
+    }
+    if(trueCounter)
+    {
+      fs.writeFileSync('DB/utenti.json',JSON.stringify(utenti,null,2),'utf8');
+      res.status(200).json(arrStatus);
+    }else{
+      res.status(400).json(arrStatus);
+    }
+  }else{
+    for (let i = 0; i < bodyReq.arg.length; i++) {
+      let index=existIdUt(bodyReq.arg[i],utenti);
+      if(index!=-1)
+      {
+        utenti.splice(index,1);
+        trueCounter=true;
+        arrStatus[i]=true;
+      }else{
+        arrStatus[i]=false;
+      }      
+    }
+    if(trueCounter)
+    {
+      fs.writeFileSync('DB/utenti.json',JSON.stringify(utenti,null,2),'utf8');
+      res.status(200).json(arrStatus);
+    }else{
+      res.status(400).json(arrStatus);
+    }
+  }
+});
+
+//modify a user
+/*
+  post example:
+  {
+  "id":"0",
+  "mail":"paolorossi@mail.com",
+  "password":"password",
+  "nome":"Paolo",
+  "cognome":"Rossi",
+  "img":"",
+  "numeroGara":"5",
+  "circuitoPreferito":"",
+  "circuitoOdiato":"",
+  "autoPreferita":""
+  }
+*/
+router.put('/',(req,res,next)=>{
+  let utenti=getUtenti();
+  let bodyReq=req.body;
+  let indexId=existIdUt(bodyReq.id,utenti);
+  let indexM=existMail(bodyReq.mail,utenti);
+  if(indexId!=-1&&(indexId==indexM||indexM==-1))
+  {
+    utenti[indexId]=bodyReq;
+    fs.writeFileSync('DB/utenti.json',JSON.stringify(utenti,null,2),'utf8');
+    res.status(200).json({});
+  }else{
+    if(indexId==-1)
+    {
+      res.status(400).json({"error":0});//error id
+    }else{
+      res.status(400).json({"error":1});//error mail
+    }
+  }
+});
 
 function getUtenti()
 {
@@ -94,6 +223,7 @@ function existMail(utMail,utenti){
 }
 function existIdUt(idUt,utenti){
   let index=-1;
+  idUt+="";
   if(utenti.length!=0)
   {
     for(let i=0;i<utenti.length;i++)
