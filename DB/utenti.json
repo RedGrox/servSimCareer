@@ -1,16 +1,14 @@
-{
-    "utenti":[
-        {
-            "id":"0",
-            "mail":"paolorossi@mail.com",
-            "password":"password",
-            "nome":"Paolo",
-            "cognome":"Rossi",
-            "img":"",
-            "numeroGara":"5",
-            "circuitoPreferito":"",
-            "circuitoOdiato":"",
-            "autoPreferita":""
-        }
-    ]
-}
+[
+    {
+        "id":"0",
+        "mail":"paolorossi@mail.com",
+        "password":"password",
+        "nome":"Paolo",
+        "cognome":"Rossi",
+        "img":"",
+        "numeroGara":"5",
+        "circuitoPreferito":"",
+        "circuitoOdiato":"",
+        "autoPreferita":""
+    }
+]
