@@ -16,21 +16,21 @@ app.use(bodyParser.json());
   }
 */
 router.get('/',(req,res,next)=>{
-    let auto=getAuto();
+    let circuiti=getCircuiti();
     let bodyReq=req.body;
     let trueCounter=false;
     let response=[];
     if(bodyReq.arg.length==0) //send back all users
     {
-      res.status(200).json(auto);
+      res.status(200).json(circuiti);
     }else
     {
       for(let i=0;i<bodyReq.arg.length;i++)
       {
-        let index=existId(bodyReq.arg[i],auto);
+        let index=existId(bodyReq.arg[i],circuiti);
         if(index!=-1)
         {
-          response.push(auto[index]);
+          response.push(circuiti[index]);
           trueCounter=true;
         }else {
           response.push({});
@@ -45,26 +45,26 @@ router.get('/',(req,res,next)=>{
     }
 });
 
-function getAuto()
+function getCircuiti()
 {
-  rawdata=fs.readFileSync('DB/auto.json');
-  let auto;
+  rawdata=fs.readFileSync('DB/circuiti.json');
+  let circuiti;
   if(rawdata.length==0)
   {
-    auto=[];
+    circuiti=[];
   }else{
-    auto=JSON.parse(rawdata);
+    circuiti=JSON.parse(rawdata);
   }
-  return auto;
+  return circuiti;
 }
-function existId(id,auto){
+function existId(id,circuiti){
     let index=-1;
     id+="";
-    if(auto.length!=0)
+    if(circuiti.length!=0)
     {
-      for(let i=0;i<auto.length;i++)
+      for(let i=0;i<circuiti.length;i++)
       {
-        if(id.localeCompare(auto[i].id)===0)
+        if(id.localeCompare(circuiti[i].id)===0)
         {
           index=i;
         }
@@ -72,7 +72,5 @@ function existId(id,auto){
     }
     return index;
   }
-
-
 
 module.exports=router;

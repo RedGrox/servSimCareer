@@ -1,5 +1,4 @@
-{
-  "campionati": [
+[
     {
       "id": "0",
       "nome": "Leon Supercopa",
@@ -131,4 +130,3 @@
       ]
     }
   ]
-}

@@ -1,8 +1,22 @@
-{
-    "team":[
-        {
-            "id":"0",
-            "nome":""
-        }
-    ]
-}
+[
+    {
+        "id":"0",
+        "nome":"aaaaaaa"
+    },
+    {
+        "id":"1",
+        "nome":"uno"
+    },
+    {
+        "id":"2",
+        "nome":"due"
+    },
+    {
+        "id":"3",
+        "nome":"tre"
+    },
+    {
+        "id":"4",
+        "nome":"quattro"
+    }
+]

@@ -10,16 +10,18 @@ const teamRoute=require('./api/team');
 const autoRoute=require('./api/auto');
 const campionatiRoute=require('./api/campionati');
 const classificheRoute=require('./api/classifiche');
+const circuitiRoute=require('./api/circuiti');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //use routes
 app.use('/utenti', utRoute);
-app.use('/teamRoute',teamRoute);
+app.use('/team',teamRoute);
 app.use('/auto',autoRoute);
 app.use('/campionati',campionatiRoute);
 app.use('/classifiche',classificheRoute);
+app.use('/circuiti',circuitiRoute);
 
 app.use('/',express.static('public'));
 
