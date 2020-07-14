@@ -10,5 +10,41 @@
     "circuitoPreferito": "",
     "circuitoOdiato": "",
     "autoPreferita": ""
+  },
+  {
+    "id": "1",
+    "mail": "paolo@mail.com",
+    "password": "507c4db58311630bdfa4ed5d4b8a562ca2f43370e03a3df411b3784a805681f7",
+    "nome": "Marco",
+    "cognome": "Rossi",
+    "img": "",
+    "numeroGara": "50",
+    "circuitoPreferito": "",
+    "circuitoOdiato": "",
+    "autoPreferita": ""
+  },
+  {
+    "id": "2",
+    "mail": "gio@mail.com",
+    "password": "8774ff9a6ab80e72c92ccf20559876ed1b7322652c2e58d9464aa4a8f6608d53",
+    "nome": "Marsasaco",
+    "cognome": "Rossdsai",
+    "img": "",
+    "numeroGara": "50",
+    "circuitoPreferito": "",
+    "circuitoOdiato": "",
+    "autoPreferita": ""
+  },
+  {
+    "id": 3,
+    "mail": "gioAS@mail.com",
+    "password": "8774ff9a6ab80e72c92ccf20559876ed1b7322652c2e58d9464aa4a8f6608d53",
+    "nome": "Marsasaco",
+    "cognome": "Rossdsai",
+    "img": "",
+    "numeroGara": "50",
+    "circuitoPreferito": "",
+    "circuitoOdiato": "",
+    "autoPreferita": ""
   }
 ]
