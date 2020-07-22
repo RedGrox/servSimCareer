@@ -103,6 +103,7 @@ router.get("/", (req, res, next) => {
 router.post("/", (req, res, next) => {
   let utenti = getUtenti();
   let bodyReq = req.body;
+  console.log(req.body);
   let trueCounter = false;
   let arrStatus = [];
   for (let i = 0; i < bodyReq.length; i++) {
@@ -260,7 +261,11 @@ function existIdUt(idUt, utenti) {
 
 function getLastId() {
   let utenti = getUtenti();
-  return Number(utenti[utenti.length - 1].id);
+  if (utenti != -1) {
+    return Number(utenti[utenti.length - 1].id);
+  } else {
+    return 0;
+  }
 }
 
 module.exports = router;

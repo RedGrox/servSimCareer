@@ -46,5 +46,33 @@
     "circuitoPreferito": "",
     "circuitoOdiato": "",
     "autoPreferita": ""
+  },
+  {
+    "id": 4,
+    "mail": "m@aaa.com",
+    "password": "01320ea22c9c88ca55a4501b4be07fc9555a7b709175080830143089849e969c",
+    "nome": "aaa",
+    "cognome": "bbbb",
+    "residenza": "",
+    "dataNascita": "10/07/2020",
+    "numeroGara": "",
+    "circuitoPreferito": "",
+    "circuitoOdiato": "",
+    "autoPreferita": "",
+    "campionatiPreferiti": []
+  },
+  {
+    "id": 5,
+    "mail": "m@aaaa.com",
+    "password": "01320ea22c9c88ca55a4501b4be07fc9555a7b709175080830143089849e969c",
+    "nome": "aaa",
+    "cognome": "bbbb",
+    "residenza": "",
+    "dataNascita": "10/07/2020",
+    "numeroGara": "",
+    "circuitoPreferito": "",
+    "circuitoOdiato": "",
+    "autoPreferita": "",
+    "campionatiPreferiti": []
   }
 ]
