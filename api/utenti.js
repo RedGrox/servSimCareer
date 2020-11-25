@@ -40,7 +40,7 @@ router.post("/login", (req, res, next) => {
     "arg"=[1,25,3]
   }
 */
-router.get("/", (req, res, next) => {
+router.post("/getUser/", (req, res, next) => {
   let utenti = getUtenti();
   let bodyReq = req.body;
   let trueCounter = false;

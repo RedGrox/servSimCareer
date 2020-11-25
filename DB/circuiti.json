@@ -1,9 +1,101 @@
 [
-    {
-        "id":"0",
-        "nome":"",
-        "nazione":"",
-        "posizione":"",
-        "meteo":""
-    }
+  {
+    "id": "0",
+    "nome": "Jerez",
+    "nazione": "Spagna",
+    "latitudine": "36.70",
+    "longitudine": "-6.03",
+    "logo": "",
+    "lunghezza": "4132"
+  },
+  {
+    "id": "1",
+    "nome": "Imola",
+    "nazione": "Italia",
+    "latitudine": "44.34",
+    "longitudine": "11.71",
+    "logo": "",
+    "lunghezza": "5018"
+  },
+  {
+    "id": "2",
+    "nome": "Valencia",
+    "nazione": "Spagna",
+    "latitudine": "39.48",
+    "longitudine": "-0.63",
+    "logo": "",
+    "lunghezza": "4005"
+  },
+  {
+    "id": "3",
+    "nome": "Portimao",
+    "nazione": "Portogallo",
+    "latitudine": "37.22",
+    "longitudine": "-8.62",
+    "logo": "",
+    "lunghezza": "4692"
+  },
+  {
+    "id": "4",
+    "nome": "Adria",
+    "nazione": "Italia",
+    "latitudine": "45.03",
+    "longitudine": "12.13",
+    "logo": "",
+    "lunghezza": "2540"
+  },
+  {
+    "id": "5",
+    "nome": "Sepang",
+    "nazione": "Malesia",
+    "latitudine": "2.76",
+    "longitudine": "101.73",
+    "logo": "",
+    "lunghezza": "5557"
+  },
+  {
+    "id": "6",
+    "nome": "Buriam",
+    "nazione": "Tailandia",
+    "latitudine": "14.96",
+    "longitudine": "103.08",
+    "logo": "",
+    "lunghezza": "4554"
+  },
+  {
+    "id": "7",
+    "nome": "Suzuka",
+    "nazione": "Giappone",
+    "latitudine": "34.84",
+    "longitudine": "136.54",
+    "logo": "",
+    "lunghezza": "5807"
+  },
+  {
+    "id": "8",
+    "nome": "Monza",
+    "nazione": "Italia",
+    "latitudine": "45.61",
+    "longitudine": "9.28",
+    "logo": "",
+    "lunghezza": "5792"
+  },
+  {
+    "id": "9",
+    "nome": "Zandvoort",
+    "nazione": "Olanda",
+    "latitudine": "52.38",
+    "longitudine": "4.54",
+    "logo": "",
+    "lunghezza": "4300"
+  },
+  {
+    "id": "10",
+    "nome": "Hungaroring",
+    "nazione": "Ungheria",
+    "latitudine": "47.57",
+    "longitudine": "19.24",
+    "logo": "",
+    "lunghezza": "4381"
+  }
 ]

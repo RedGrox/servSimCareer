@@ -1,272 +1,300 @@
 [
-    {
-      "id": "0",
-      "nome": "Leon Supercopa",
-      "logo": "logo-champ-0.png",
-      "calendario": [
-        {
-          "seq": "1",
-          "data": "04/07/2019",
-          "circuito": "Jerez"
-        },
-        {
-          "seq": "2",
-          "data": "11/07/2019",
-          "circuito": "Barcellona"
-        },
-        {
-          "seq": "3",
-          "data": "18/07/2019",
-          "circuito": "Valencia"
-        },
-        {
-          "seq": "4",
-          "data": "25/07/2019",
-          "circuito": "Portimao"
-        }
-      ],
-      "impostazioni-gioco": [
-        {
-          "tipo": "Bandiere",
-          "valore": "Solo nere"
-        },
-        {
-          "tipo": "Consumo carburante",
-          "valore": "Normale"
-        },
-        {
-          "tipo": "Consumo gomme",
-          "valore": "Normale"
-        },
-        {
-          "tipo": "Aiuti alla guida",
-          "valore": "Frizione automatica"
-        }
-      ],
-      "lista-auto": "Seat Leon",
-      "piloti-iscritti": [
-        {
-          "nome": "Roberto Cosi",
-          "team": "Busters eRacing Team",
-          "auto": "Seat Leon",
-          "tempi":[
-            {
-              "fp1Bl":"1.24.300",
-              "fp2Bl":"1.24.200",
-              "fp3Bl":"1.23.300",
-              "qBl":"1.23.100",
-              "rBl":"1.25.300",
-              "fp1Ll":"1.30.300",
-              "fp2Ll":"1.27.300",
-              "fp3Ll":"1.26.300",
-              "qLl":"1.25.300",
-              "rLl":"1.25.300"
-            }
-          ]
-        },
-        {
-          "nome": "Giacomo Lapadula",
-          "team": "Naja Racing Italia",
-          "auto": "Seat Leon",
-          "tempi":[
-            {
-              "fp1Bl":"1.24.300",
-              "fp2Bl":"1.24.200",
-              "fp3Bl":"1.23.300",
-              "qBl":"1.23.100",
-              "rBl":"1.25.300",
-              "fp1Ll":"1.30.300",
-              "fp2Ll":"1.27.300",
-              "fp3Ll":"1.26.300",
-              "qLl":"1.25.300",
-              "rLl":"1.25.300"
-            }
-          ]
-        },
-        {
-          "nome": "Andrea Crespi",
-          "team": "Handy Racing Team",
-          "auto": "Seat Leon",
-          "tempi":[
-            {
-              "fp1Bl":"1.24.300",
-              "fp2Bl":"1.24.200",
-              "fp3Bl":"1.23.300",
-              "qBl":"1.23.100",
-              "rBl":"1.25.300",
-              "fp1Ll":"1.30.300",
-              "fp2Ll":"1.27.300",
-              "fp3Ll":"1.26.300",
-              "qLl":"1.25.300",
-              "rLl":"1.25.300"
-            }
-          ]
-        },
-        {
-          "nome": "Gennaro Deiulis",
-          "team": "Team SSD",
-          "auto": "Seat Leon",
-          "tempi":[
-            {
-              "fp1Bl":"1.24.300",
-              "fp2Bl":"1.24.200",
-              "fp3Bl":"1.23.300",
-              "qBl":"1.23.100",
-              "rBl":"1.25.300",
-              "fp1Ll":"1.30.300",
-              "fp2Ll":"1.27.300",
-              "fp3Ll":"1.26.300",
-              "qLl":"1.25.300",
-              "rLl":"1.25.300"
-            }
-          ]
-        },
-        {
-          "nome": "Fabio Narduzzo",
-          "team": "Busters eRacing Team",
-          "auto": "Seat Leon",
-          "tempi":[
-            {
-              "fp1Bl":"1.24.300",
-              "fp2Bl":"1.24.200",
-              "fp3Bl":"1.23.300",
-              "qBl":"1.23.100",
-              "rBl":"1.25.300",
-              "fp1Ll":"1.30.300",
-              "fp2Ll":"1.27.300",
-              "fp3Ll":"1.26.300",
-              "qLl":"1.25.300",
-              "rLl":"1.25.300"
-            }
-          ]
-        },
-        {
-          "nome": "Roberto Contino",
-          "team": "Handy Racing Team",
-          "auto": "Seat Leon",
-          "tempi":[
-            {
-              "fp1Bl":"1.24.300",
-              "fp2Bl":"1.24.200",
-              "fp3Bl":"1.23.300",
-              "qBl":"1.23.100",
-              "rBl":"1.25.300",
-              "fp1Ll":"1.30.300",
-              "fp2Ll":"1.27.300",
-              "fp3Ll":"1.26.300",
-              "qLl":"1.25.300",
-              "rLl":"1.25.300"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1",
-      "nome": "International TCT",
-      "logo": "logo-champ-1.png",
-      "calendario": [
-        {
-          "seq": "1",
-          "data": "30/01/2020",
-          "circuito": "Sepang"
-        },
-        {
-          "seq": "2",
-          "data": "13/02/2020",
-          "circuito": "Buriram"
-        },
-        {
-          "seq": "3",
-          "data": "27/02/2020",
-          "circuito": "Suzuka"
-        },
-        {
-          "seq": "4",
-          "data": "12/03/2020",
-          "circuito": "Zhejiang"
-        },
-        {
-          "seq": "5",
-          "data": "26/03/2020",
-          "circuito": "Zandvoort"
-        },
-        {
-          "seq": "6",
-          "data": "09/04/2020",
-          "circuito": "Hungaroring"
-        },
-        {
-          "seq": "7",
-          "data": "23/05/2020",
-          "circuito": "Adria"
-        }
-      ],
-      "impostazioni-gioco": [
-        {
-          "tipo": "Bandiere",
-          "valore": "Nere e Blu"
-        },
-        {
-          "tipo": "Consumo carburante",
-          "valore": "Normale"
-        },
-        {
-          "tipo": "Consumo gomme",
-          "valore": "Normale"
-        },
-        {
-          "tipo": "Aiuti alla guida",
-          "valore": "Frizione automatica, ABS"
-        }
-      ],
-      "lista-auto": "VW Golf, Honda Civic, Peugeot 308, Hyundai i30n, Alfa Romeo Giulietta",
-      "piloti-iscritti": [
-        {
-          "nome": "Gianluca De Matteo",
-          "team": "Busters eRacing Team",
-          "auto": "Honda Civic",
-          "tempi":[
-            {
-              "fp1Bl":"1.24.300",
-              "fp2Bl":"1.24.200",
-              "fp3Bl":"1.23.300",
-              "qBl":"1.23.100",
-              "rBl":"1.25.300",
-              "fp1Ll":"1.30.300",
-              "fp2Ll":"1.27.300",
-              "fp3Ll":"1.26.300",
-              "qLl":"1.25.300",
-              "rLl":"1.25.300"
-            }
-          ]
-        },
-        {
-          "nome": "Claudio Gasperini",
-          "team": "Panzer Team",
-          "auto": "Peugeot 308"
-        },
-        {
-          "nome": "Marco Mazzetti",
-          "team": "Handy Racing Team",
-          "auto": "VW Golf"
-        },
-        {
-          "nome": "Dario Raffaeta",
-          "team": "Indipendente",
-          "auto": "Alfa Romeo Giulietta"
-        },
-        {
-          "nome": "Ugo Federico Bagnasco",
-          "team": "Busters eRacing Team",
-          "auto": "Honda Civic"
-        },
-        {
-          "nome": "Enrico Sancini",
-          "team": "Handy Racing Team",
-          "auto": "VW Golf"
-        }
-      ]
-    }
-  ]
-
+  {
+    "id": "0",
+    "nome": "Leon Supercopa",
+    "logo": "logo-champ-0.png",
+    "calendario": [
+      {
+        "seq": "1",
+        "data": "2019-07-04",
+        "ora": "18:00",
+        "circuito": "Jerez"
+      },
+      {
+        "seq": "2",
+        "data": "2019-07-11",
+        "ora": "21:00",
+        "circuito": "Imola"
+      },
+      {
+        "seq": "3",
+        "data": "2019-07-18",
+        "ora": "16:00",
+        "circuito": "Valencia"
+      },
+      {
+        "seq": "4",
+        "data": "2019-07-25",
+        "ora": "21:00",
+        "circuito": "Portimao"
+      }
+    ],
+    "impostazioni-gioco": [
+      {
+        "tipo": "Bandiere",
+        "valore": "Solo nere"
+      },
+      {
+        "tipo": "Consumo carburante",
+        "valore": "Normale"
+      },
+      {
+        "tipo": "Consumo gomme",
+        "valore": "Normale"
+      },
+      {
+        "tipo": "Aiuti alla guida",
+        "valore": "Frizione automatica"
+      }
+    ],
+    "lista-auto": "Seat Leon",
+    "pilotiIscritti": [
+      {
+        "idUt": 4,
+        "nome": "Roberto Cosi",
+        "team": "Busters eRacing Team",
+        "auto": "Seat Leon",
+        "tempi": [
+          {
+            "fp1Bl": "1.24.300",
+            "fp2Bl": "1.24.200",
+            "fp3Bl": "1.23.300",
+            "qBl": "1.23.100",
+            "rBl": "1.25.300",
+            "fp1Ll": "1.30.300",
+            "fp2Ll": "1.27.300",
+            "fp3Ll": "1.26.300",
+            "qLl": "1.25.300",
+            "rLl": "1.25.300"
+          }
+        ]
+      },
+      {
+        "idUt": 251,
+        "nome": "Giacomo Lapadula",
+        "team": "Naja Racing Italia",
+        "auto": "Seat Leon",
+        "tempi": [
+          {
+            "fp1Bl": "1.24.300",
+            "fp2Bl": "1.24.200",
+            "fp3Bl": "1.23.300",
+            "qBl": "1.23.100",
+            "rBl": "1.25.300",
+            "fp1Ll": "1.30.300",
+            "fp2Ll": "1.27.300",
+            "fp3Ll": "1.26.300",
+            "qLl": "1.25.300",
+            "rLl": "1.25.300"
+          }
+        ]
+      },
+      {
+        "idUt": 252,
+        "nome": "Andrea Crespi",
+        "team": "Handy Racing Team",
+        "auto": "Seat Leon",
+        "tempi": [
+          {
+            "fp1Bl": "1.24.300",
+            "fp2Bl": "1.24.200",
+            "fp3Bl": "1.23.300",
+            "qBl": "1.23.100",
+            "rBl": "1.25.300",
+            "fp1Ll": "1.30.300",
+            "fp2Ll": "1.27.300",
+            "fp3Ll": "1.26.300",
+            "qLl": "1.25.300",
+            "rLl": "1.25.300"
+          }
+        ]
+      },
+      {
+        "idUt": 253,
+        "nome": "Gennaro Deiulis",
+        "team": "Team SSD",
+        "auto": "Seat Leon",
+        "tempi": [
+          {
+            "fp1Bl": "1.24.300",
+            "fp2Bl": "1.24.200",
+            "fp3Bl": "1.23.300",
+            "qBl": "1.23.100",
+            "rBl": "1.25.300",
+            "fp1Ll": "1.30.300",
+            "fp2Ll": "1.27.300",
+            "fp3Ll": "1.26.300",
+            "qLl": "1.25.300",
+            "rLl": "1.25.300"
+          }
+        ]
+      },
+      {
+        "idUt": 255,
+        "nome": "Fabio Narduzzo",
+        "team": "Busters eRacing Team",
+        "auto": "Seat Leon",
+        "tempi": [
+          {
+            "fp1Bl": "1.24.300",
+            "fp2Bl": "1.24.200",
+            "fp3Bl": "1.23.300",
+            "qBl": "1.23.100",
+            "rBl": "1.25.300",
+            "fp1Ll": "1.30.300",
+            "fp2Ll": "1.27.300",
+            "fp3Ll": "1.26.300",
+            "qLl": "1.25.300",
+            "rLl": "1.25.300"
+          }
+        ]
+      },
+      {
+        "idUt": 256,
+        "nome": "Roberto Contino",
+        "team": "Handy Racing Team",
+        "auto": "Seat Leon",
+        "tempi": [
+          {
+            "fp1Bl": "1.24.300",
+            "fp2Bl": "1.24.200",
+            "fp3Bl": "1.23.300",
+            "qBl": "1.23.100",
+            "rBl": "1.25.300",
+            "fp1Ll": "1.30.300",
+            "fp2Ll": "1.27.300",
+            "fp3Ll": "1.26.300",
+            "qLl": "1.25.300",
+            "rLl": "1.25.300"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "nome": "International TCT",
+    "logo": "logo-champ-1.png",
+    "calendario": [
+      {
+        "seq": "1",
+        "data": "2019-07-04",
+        "ora": "21:00",
+        "circuito": "Sepang"
+      },
+      {
+        "seq": "2",
+        "data": "2020-02-13",
+        "ora": "18:00",
+        "circuito": "Buriam"
+      },
+      {
+        "seq": "3",
+        "data": "2020-02-27",
+        "ora": "16:00",
+        "circuito": "Suzuka"
+      },
+      {
+        "seq": "4",
+        "data": "2020-03-12",
+        "ora": "18:00",
+        "circuito": "Monza"
+      },
+      {
+        "seq": "5",
+        "data": "2020-03-26",
+        "ora": "21:00",
+        "circuito": "Zandvoort"
+      },
+      {
+        "seq": "6",
+        "data": "2020-04-09",
+        "ora": "15:00",
+        "circuito": "Hungaroring"
+      },
+      {
+        "seq": "7",
+        "data": "2020-05-23",
+        "ora": "16:00",
+        "circuito": "Adria"
+      }
+    ],
+    "impostazioni-gioco": [
+      {
+        "tipo": "Bandiere",
+        "valore": "Nere e Blu"
+      },
+      {
+        "tipo": "Consumo carburante",
+        "valore": "Normale"
+      },
+      {
+        "tipo": "Consumo gomme",
+        "valore": "Normale"
+      },
+      {
+        "tipo": "Aiuti alla guida",
+        "valore": "Frizione automatica, ABS"
+      }
+    ],
+    "lista-auto": "VW Golf, Honda Civic, Peugeot 308, Hyundai i30n, Alfa Romeo Giulietta",
+    "pilotiIscritti": [
+      {
+        "idUt": 230,
+        "nome": "Gianluca De Matteo",
+        "team": "Busters eRacing Team",
+        "auto": "Honda Civic",
+        "tempi": [
+          {
+            "fp1Bl": "1.24.300",
+            "fp2Bl": "1.24.200",
+            "fp3Bl": "1.23.300",
+            "qBl": "1.23.100",
+            "rBl": "1.25.300",
+            "fp1Ll": "1.30.300",
+            "fp2Ll": "1.27.300",
+            "fp3Ll": "1.26.300",
+            "qLl": "1.25.300",
+            "rLl": "1.25.300"
+          }
+        ]
+      },
+      {
+        "idUt": 231,
+        "nome": "Claudio Gasperini",
+        "team": "Panzer Team",
+        "auto": "Peugeot 308"
+      },
+      {
+        "idUt": 232,
+        "nome": "Marco Mazzetti",
+        "team": "Handy Racing Team",
+        "auto": "VW Golf"
+      },
+      {
+        "idUt": 233,
+        "nome": "Dario Raffaeta",
+        "team": "Indipendente",
+        "auto": "Alfa Romeo Giulietta"
+      },
+      {
+        "idUt": 4,
+        "nome": "Ugo Federico Bagnasco",
+        "team": "Busters eRacing Team",
+        "auto": "Honda Civic"
+      },
+      {
+        "idUt": 234,
+        "nome": "Enrico Sancini",
+        "team": "Handy Racing Team",
+        "auto": "VW Golf"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "nome": "International TCT",
+    "logo": "logo-champ-1.png",
+    "pilotiIscritti": []
+  }
+]
