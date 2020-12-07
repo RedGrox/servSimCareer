@@ -8,25 +8,25 @@
         "seq": "1",
         "data": "2019-07-04",
         "ora": "18:00",
-        "circuito": "Jerez"
+        "idCircuito": "0"
       },
       {
         "seq": "2",
         "data": "2019-07-11",
         "ora": "21:00",
-        "circuito": "Imola"
+        "idCircuito": "1"
       },
       {
         "seq": "3",
         "data": "2019-07-18",
         "ora": "16:00",
-        "circuito": "Valencia"
+        "idCircuito": "2"
       },
       {
         "seq": "4",
         "data": "2019-07-25",
         "ora": "21:00",
-        "circuito": "Portimao"
+        "idCircuito": "3"
       }
     ],
     "impostazioni-gioco": [
@@ -180,43 +180,43 @@
         "seq": "1",
         "data": "2019-07-04",
         "ora": "21:00",
-        "circuito": "Sepang"
+        "idCircuito": "5"
       },
       {
         "seq": "2",
         "data": "2020-02-13",
         "ora": "18:00",
-        "circuito": "Buriam"
+        "idCircuito": "6"
       },
       {
         "seq": "3",
         "data": "2020-02-27",
         "ora": "16:00",
-        "circuito": "Suzuka"
+        "idCircuito": "7"
       },
       {
         "seq": "4",
         "data": "2020-03-12",
         "ora": "18:00",
-        "circuito": "Monza"
+        "idCircuito": "8"
       },
       {
         "seq": "5",
         "data": "2020-03-26",
         "ora": "21:00",
-        "circuito": "Zandvoort"
+        "idCircuito": "9"
       },
       {
         "seq": "6",
         "data": "2020-04-09",
         "ora": "15:00",
-        "circuito": "Hungaroring"
+        "idCircuito": "10"
       },
       {
         "seq": "7",
         "data": "2020-05-23",
         "ora": "16:00",
-        "circuito": "Adria"
+        "idCircuito": "4"
       }
     ],
     "impostazioni-gioco": [
@@ -290,11 +290,5 @@
         "auto": "VW Golf"
       }
     ]
-  },
-  {
-    "id": "20",
-    "nome": "International TCT",
-    "logo": "logo-champ-1.png",
-    "pilotiIscritti": []
   }
 ]

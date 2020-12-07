@@ -3,99 +3,110 @@
     "id": "0",
     "nome": "Jerez",
     "nazione": "Spagna",
+    "logoNazione": "flagsPng/spain.png",
     "latitudine": "36.70",
     "longitudine": "-6.03",
-    "logo": "",
+    "logo": "circuitPng/Circuito_de_Jerez.png",
     "lunghezza": "4132"
   },
   {
     "id": "1",
     "nome": "Imola",
     "nazione": "Italia",
+    "logoNazione": "flagsPng/italy.png",
     "latitudine": "44.34",
     "longitudine": "11.71",
-    "logo": "",
+    "logo": "circuitPng/imola.png",
     "lunghezza": "5018"
   },
   {
     "id": "2",
     "nome": "Valencia",
     "nazione": "Spagna",
+    "logoNazione": "flagsPng/spain.png",
     "latitudine": "39.48",
     "longitudine": "-0.63",
-    "logo": "",
+    "logo": "circuitPng/Circuit_Ricardo_Tormo.png",
     "lunghezza": "4005"
   },
   {
     "id": "3",
     "nome": "Portimao",
     "nazione": "Portogallo",
+    "logoNazione": "flagsPng/portugal.png",
     "latitudine": "37.22",
     "longitudine": "-8.62",
-    "logo": "",
+    "logo": "circuitPng/Autódromo_Internacional_do_Algarve.png",
     "lunghezza": "4692"
   },
   {
     "id": "4",
     "nome": "Adria",
     "nazione": "Italia",
+    "logoNazione": "flagsPng/italy.png",
     "latitudine": "45.03",
     "longitudine": "12.13",
-    "logo": "",
+    "logo": "circuitPng/Circuit_Adria.png",
     "lunghezza": "2540"
   },
   {
     "id": "5",
     "nome": "Sepang",
     "nazione": "Malesia",
+    "logoNazione": "flagsPng/malaysia.png",
     "latitudine": "2.76",
     "longitudine": "101.73",
-    "logo": "",
+    "logo": "circuitPng/Sepang_International_Circuit.png",
     "lunghezza": "5557"
   },
   {
     "id": "6",
     "nome": "Buriam",
     "nazione": "Tailandia",
+    "logoNazione": "flagsPng/thailand.png",
     "latitudine": "14.96",
     "longitudine": "103.08",
-    "logo": "",
+    "logo": "circuitPng/Buriram_circuit.png",
     "lunghezza": "4554"
   },
   {
     "id": "7",
     "nome": "Suzuka",
     "nazione": "Giappone",
+    "logoNazione": "flagsPng/japan.png",
     "latitudine": "34.84",
     "longitudine": "136.54",
-    "logo": "",
+    "logo": "circuitPng/Suzuka_Circuit.png",
     "lunghezza": "5807"
   },
   {
     "id": "8",
     "nome": "Monza",
     "nazione": "Italia",
+    "logoNazione": "flagsPng/italy.png",
     "latitudine": "45.61",
     "longitudine": "9.28",
-    "logo": "",
+    "logo": "circuitPng/Autodromo_Nazionale_Monza.png",
     "lunghezza": "5792"
   },
   {
     "id": "9",
     "nome": "Zandvoort",
     "nazione": "Olanda",
+    "logoNazione": "flagsPng/netherlands.png",
     "latitudine": "52.38",
     "longitudine": "4.54",
-    "logo": "",
+    "logo": "circuitPng/Circuit_Park_Zandvoort.png",
     "lunghezza": "4300"
   },
   {
     "id": "10",
     "nome": "Hungaroring",
     "nazione": "Ungheria",
+    "logoNazione": "flagsPng/hungary.png",
     "latitudine": "47.57",
     "longitudine": "19.24",
-    "logo": "",
+    "logo": "circuitPng/Hungaroring.png",
     "lunghezza": "4381"
   }
 ]

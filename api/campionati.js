@@ -32,7 +32,7 @@ router.get("/dateUt/:idUt", (req, res, next) => {
     if (thereIsUt == true) {
       for (let j = 0; j < campionati[i].calendario.length; j++) {
         let gara = campionati[i].calendario[j];
-        let circuito = getCircuito(gara.circuito);
+        let circuito = getCircuito(gara.idCircuito);
         let index = _.findIndex(userRaces, function (item) {
           return item.title == gara.data;
         });
@@ -99,7 +99,7 @@ router.post("/", (req, res, next) => {
   let trueCounter = false;
   let response = [];
   if (bodyReq.arg.length == 0) {
-    //send back all users
+    //send back all championships
     res.status(200).json({ campionati, pref });
   } else {
     for (let i = 0; i < bodyReq.arg.length; i++) {
@@ -130,7 +130,7 @@ function getCampionati() {
   return campionati;
 }
 
-function getCircuito(nomeCircuito) {
+function getCircuito(idCircuito) {
   rawdata = fs.readFileSync("DB/circuiti.json");
   let circuiti;
   if (rawdata.length == 0) {
@@ -138,7 +138,7 @@ function getCircuito(nomeCircuito) {
   } else {
     circuiti = JSON.parse(rawdata);
     for (let i = 0; i < circuiti.length; i++) {
-      if (circuiti[i].nome == nomeCircuito) {
+      if (circuiti[i].id == idCircuito) {
         return circuiti[i];
       }
     }

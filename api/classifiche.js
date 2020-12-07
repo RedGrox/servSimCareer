@@ -15,7 +15,7 @@ app.use(bodyParser.json());
     "arg"=[1,25,3]
   }
 */
-router.get("/", (req, res, next) => {
+router.post("/getClassifica/", (req, res, next) => {
   let classifiche = getClassifiche();
   let bodyReq = req.body;
   let trueCounter = false;
@@ -27,6 +27,24 @@ router.get("/", (req, res, next) => {
     for (let i = 0; i < bodyReq.arg.length; i++) {
       let index = existId(bodyReq.arg[i], classifiche);
       if (index != -1) {
+        classifiche[index].classificaPiloti.sort(function (a, b) {
+          if (a.punti < b.punti) {
+            return 1;
+          }
+          if (a.punti > b.punti) {
+            return -1;
+          }
+          return 0;
+        });
+        classifiche[index].classificaTeam.sort(function (a, b) {
+          if (a.punti < b.punti) {
+            return 1;
+          }
+          if (a.punti > b.punti) {
+            return -1;
+          }
+          return 0;
+        });
         response.push(classifiche[index]);
         trueCounter = true;
       } else {
