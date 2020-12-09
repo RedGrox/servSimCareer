@@ -2,12 +2,16 @@ const express = require("express");
 const app = express();
 const router = express.Router();
 const fs = require("fs");
+const https = require("https");
 var _ = require("lodash");
 let rawdata;
 let http = require("http");
+var hash = require("object-hash");
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+var schedule = require("node-schedule");
+const APIOWA = "0a3befe2c8971b2a420fe94c981fcd6f";
 
 //get circuiti
 /*
@@ -118,6 +122,182 @@ router.post("/", (req, res, next) => {
     }
   }
 });
+
+var scheduledFunction = schedule.scheduleJob("0 * * * *", () => {
+  console.log("request meteo");
+  let campionati = getCampionati();
+  let boolModified = false;
+  for (let i = 0; i < campionati.length; i++) {
+    for (let j = 0; j < campionati[i].calendario.length; j++) {
+      let diff = date_diff_indays(campionati[i].calendario[j].data);
+      if (diff == 0 || diff == 1) {
+        let circuito = getCircuito(campionati[i].calendario[j].idCircuito);
+        let raceTimeStamp = toTimestamp(
+          campionati[i].calendario[j].data +
+            " " +
+            campionati[i].calendario[j].ora
+        );
+        let str = "";
+        https
+          .get(
+            "https://api.openweathermap.org/" +
+              "data/2.5/onecall?lat=" +
+              circuito.latitudine +
+              "&lon=" +
+              circuito.longitudine +
+              "&exclude=current,minutely,alerts&appid=" +
+              APIOWA +
+              "&lang=it&units=metric",
+            (res) => {
+              res.on("data", (d) => {
+                str += d;
+              });
+              res.on("end", () => {
+                let response = JSON.parse(str);
+                for (let k = 0; k < response.hourly.length; k++) {
+                  if (
+                    response.hourly[k].dt + response.timezone_offset ==
+                    raceTimeStamp
+                  ) {
+                    let previsione = response.hourly[k];
+                    let windDirection =
+                      windSector[Math.round(previsione.wind_deg / 22.5)];
+
+                    let meteo = {
+                      temperatura: previsione.temp,
+                      percepita: previsione.feels_like,
+                      umidita: previsione.humidity,
+                      velVento: previsione.wind_speed,
+                      dirVento: windDirection,
+                      prebPrec: previsione.pop,
+                      nuvolePerc: previsione.clouds,
+                      descMeteo: previsione.weather[0].description,
+                      icon: previsione.weather[0].icon,
+                      visib: previsione.visibility,
+                    };
+                    let requestWeatherFingerPrint = hash(meteo);
+                    let dbWeatherFingerPrint = hash(
+                      campionati[i].calendario[j].meteo
+                    );
+                    if (requestWeatherFingerPrint != dbWeatherFingerPrint) {
+                      console.log("changed 0-1");
+                      campionati[i].calendario[j].meteo = meteo;
+                      fs.writeFileSync(
+                        "DB/campionati.json",
+                        JSON.stringify(campionati, null, 2),
+                        "utf8"
+                      );
+                    }
+                    k = response.hourly.length;
+                  }
+                }
+              });
+            }
+          )
+          .end();
+      }
+      if (diff >= 2 && diff <= 7) {
+        let circuito = getCircuito(campionati[i].calendario[j].idCircuito);
+        //richiesta
+        let str = "";
+        https
+          .get(
+            "https://api.openweathermap.org/" +
+              "data/2.5/onecall?lat=" +
+              circuito.latitudine +
+              "&lon=" +
+              circuito.longitudine +
+              "&exclude=current,minutely,alerts&appid=" +
+              APIOWA +
+              "&lang=it&units=metric",
+            (res) => {
+              res.on("data", (d) => {
+                str += d;
+              });
+              res.on("end", () => {
+                let response = JSON.parse(str);
+                for (let k = 0; k < response.daily.length; k++) {
+                  let responseDate = new Date(response.daily[k].dt * 1000);
+                  let stringDate =
+                    responseDate.getFullYear() +
+                    "-" +
+                    (responseDate.getMonth() + 1) +
+                    "-" +
+                    responseDate.getDate();
+                  if (stringDate == campionati[i].calendario[j].data) {
+                    let previsione = response.daily[k];
+                    let windDirection =
+                      windSector[Math.round(previsione.wind_deg / 22.5)];
+                    let meteo = {
+                      temperatura: previsione.temp.day,
+                      percepita: previsione.feels_like.day,
+                      umidita: previsione.humidity,
+                      velVento: previsione.wind_speed,
+                      dirVento: windDirection,
+                      prebPrec: previsione.pop,
+                      nuvolePerc: previsione.clouds,
+                      descMeteo: previsione.weather[0].description,
+                      icon: previsione.weather[0].icon,
+                    };
+                    let requestWeatherFingerPrint = hash(meteo);
+                    let dbWeatherFingerPrint = hash(
+                      campionati[i].calendario[j].meteo
+                    );
+                    if (requestWeatherFingerPrint != dbWeatherFingerPrint) {
+                      console.log("changed 2-7");
+                      campionati[i].calendario[j].meteo = meteo;
+                      fs.writeFileSync(
+                        "DB/campionati.json",
+                        JSON.stringify(campionati, null, 2),
+                        "utf8"
+                      );
+                    }
+                    k = response.hourly.length;
+                  }
+                }
+              });
+            }
+          )
+          .end();
+      }
+    }
+  }
+});
+
+const windSector = [
+  "N",
+  "NNE",
+  "NE",
+  "ENE",
+  "E",
+  "ESE",
+  "SE",
+  "SSE",
+  "S",
+  "SSW",
+  "SW",
+  "WSW",
+  "W",
+  "WNW",
+  "NW",
+  "NNW",
+  "N",
+];
+
+var toTimestamp = (strDate) => {
+  var datum = Date.parse(strDate);
+  return datum / 1000;
+};
+
+date_diff_indays = function (date) {
+  let dt1 = new Date();
+  let dt2 = new Date(date);
+  return Math.floor(
+    (Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) -
+      Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate())) /
+      (1000 * 60 * 60 * 24)
+  );
+};
 
 function getCampionati() {
   rawdata = fs.readFileSync("DB/campionati.json");

@@ -8,25 +8,50 @@
         "seq": "1",
         "data": "2019-07-04",
         "ora": "18:00",
-        "idCircuito": "0"
+        "idCircuito": "0",
+        "meteo": {}
       },
       {
         "seq": "2",
         "data": "2019-07-11",
         "ora": "21:00",
-        "idCircuito": "1"
+        "idCircuito": "1",
+        "meteo": {}
       },
       {
         "seq": "3",
-        "data": "2019-07-18",
-        "ora": "16:00",
-        "idCircuito": "2"
+        "data": "2020-12-9",
+        "ora": "18:00",
+        "idCircuito": "2",
+        "meteo": {
+          "temperatura": 11.85,
+          "percepita": 5.71,
+          "umidita": 43,
+          "velVento": 5.87,
+          "dirVento": "WNW",
+          "prebPrec": 0,
+          "nuvolePerc": 17,
+          "descMeteo": "poche nuvole",
+          "icon": "02d",
+          "visib": 10000
+        }
       },
       {
         "seq": "4",
-        "data": "2019-07-25",
+        "data": "2020-12-13",
         "ora": "21:00",
-        "idCircuito": "3"
+        "idCircuito": "3",
+        "meteo": {
+          "temperatura": 17.62,
+          "percepita": 17.81,
+          "umidita": 78,
+          "velVento": 1.4,
+          "dirVento": "SW",
+          "prebPrec": 0.26,
+          "nuvolePerc": 100,
+          "descMeteo": "pioggia leggera",
+          "icon": "10d"
+        }
       }
     ],
     "impostazioni-gioco": [
@@ -180,43 +205,80 @@
         "seq": "1",
         "data": "2019-07-04",
         "ora": "21:00",
-        "idCircuito": "5"
+        "idCircuito": "5",
+        "meteo": {}
       },
       {
         "seq": "2",
         "data": "2020-02-13",
         "ora": "18:00",
-        "idCircuito": "6"
+        "idCircuito": "6",
+        "meteo": {}
       },
       {
         "seq": "3",
         "data": "2020-02-27",
         "ora": "16:00",
-        "idCircuito": "7"
+        "idCircuito": "7",
+        "meteo": {}
       },
       {
         "seq": "4",
-        "data": "2020-03-12",
+        "data": "2020-12-13",
         "ora": "18:00",
-        "idCircuito": "8"
+        "idCircuito": "8",
+        "meteo": {
+          "temperatura": 8.01,
+          "percepita": 5.17,
+          "umidita": 54,
+          "velVento": 1.07,
+          "dirVento": "SW",
+          "prebPrec": 0,
+          "nuvolePerc": 0,
+          "descMeteo": "cielo sereno",
+          "icon": "01d"
+        }
       },
       {
         "seq": "5",
         "data": "2020-03-26",
         "ora": "21:00",
-        "idCircuito": "9"
+        "idCircuito": "9",
+        "meteo": {}
       },
       {
         "seq": "6",
-        "data": "2020-04-09",
+        "data": "2020-12-11",
         "ora": "15:00",
-        "idCircuito": "10"
+        "idCircuito": "10",
+        "meteo": {
+          "temperatura": 4.78,
+          "percepita": 2.21,
+          "umidita": 84,
+          "velVento": 1.36,
+          "dirVento": "SE",
+          "prebPrec": 0,
+          "nuvolePerc": 100,
+          "descMeteo": "cielo coperto",
+          "icon": "04d"
+        }
       },
       {
         "seq": "7",
-        "data": "2020-05-23",
+        "data": "2020-12-12",
         "ora": "16:00",
-        "idCircuito": "4"
+        "idCircuito": "4",
+        "meteo": {
+          "temperatura": 6.42,
+          "percepita": 3.33,
+          "umidita": 86,
+          "velVento": 2.6,
+          "dirVento": "N",
+          "prebPrec": 0.58,
+          "nuvolePerc": 100,
+          "descMeteo": "pioggia leggera",
+          "icon": "10d"
+        }
       }
     ],
     "impostazioni-gioco": [
