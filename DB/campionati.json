@@ -20,17 +20,17 @@
       },
       {
         "seq": "3",
-        "data": "2020-12-9",
+        "data": "2020-12-09",
         "ora": "18:00",
         "idCircuito": "2",
         "meteo": {
-          "temperatura": 11.85,
-          "percepita": 5.71,
-          "umidita": 43,
-          "velVento": 5.87,
+          "temperatura": 13.55,
+          "percepita": 7.36,
+          "umidita": 37,
+          "velVento": 5.83,
           "dirVento": "WNW",
           "prebPrec": 0,
-          "nuvolePerc": 17,
+          "nuvolePerc": 15,
           "descMeteo": "poche nuvole",
           "icon": "02d",
           "visib": 10000
@@ -42,19 +42,19 @@
         "ora": "21:00",
         "idCircuito": "3",
         "meteo": {
-          "temperatura": 17.62,
-          "percepita": 17.81,
-          "umidita": 78,
-          "velVento": 1.4,
-          "dirVento": "SW",
-          "prebPrec": 0.26,
+          "temperatura": 17.63,
+          "percepita": 17.9,
+          "umidita": 79,
+          "velVento": 1.39,
+          "dirVento": "SSW",
+          "prebPrec": 0.28,
           "nuvolePerc": 100,
           "descMeteo": "pioggia leggera",
           "icon": "10d"
         }
       }
     ],
-    "impostazioni-gioco": [
+    "impostazioni_gioco": [
       {
         "tipo": "Bandiere",
         "valore": "Solo nere"
@@ -72,7 +72,11 @@
         "valore": "Frizione automatica"
       }
     ],
-    "lista-auto": "Seat Leon",
+    "lista_auto": [
+      {
+        "modello": "Seat Leon"
+      }
+    ],
     "pilotiIscritti": [
       {
         "idUt": 4,
@@ -228,10 +232,10 @@
         "ora": "18:00",
         "idCircuito": "8",
         "meteo": {
-          "temperatura": 8.01,
-          "percepita": 5.17,
+          "temperatura": 7.8,
+          "percepita": 5.04,
           "umidita": 54,
-          "velVento": 1.07,
+          "velVento": 0.92,
           "dirVento": "SW",
           "prebPrec": 0,
           "nuvolePerc": 0,
@@ -252,15 +256,16 @@
         "ora": "15:00",
         "idCircuito": "10",
         "meteo": {
-          "temperatura": 4.78,
-          "percepita": 2.21,
-          "umidita": 84,
-          "velVento": 1.36,
-          "dirVento": "SE",
+          "temperatura": 3.55,
+          "percepita": 0.59,
+          "umidita": 86,
+          "velVento": 1.71,
+          "dirVento": "ESE",
           "prebPrec": 0,
-          "nuvolePerc": 100,
+          "nuvolePerc": 90,
           "descMeteo": "cielo coperto",
-          "icon": "04d"
+          "icon": "04d",
+          "visib": 10000
         }
       },
       {
@@ -269,19 +274,20 @@
         "ora": "16:00",
         "idCircuito": "4",
         "meteo": {
-          "temperatura": 6.42,
-          "percepita": 3.33,
-          "umidita": 86,
-          "velVento": 2.6,
-          "dirVento": "N",
-          "prebPrec": 0.58,
-          "nuvolePerc": 100,
-          "descMeteo": "pioggia leggera",
-          "icon": "10d"
+          "temperatura": 8.9,
+          "percepita": 5.7,
+          "umidita": 73,
+          "velVento": 2.78,
+          "dirVento": "NNW",
+          "prebPrec": 0,
+          "nuvolePerc": 46,
+          "descMeteo": "nubi sparse",
+          "icon": "03d",
+          "visib": 10000
         }
       }
     ],
-    "impostazioni-gioco": [
+    "impostazioni_gioco": [
       {
         "tipo": "Bandiere",
         "valore": "Nere e Blu"
@@ -299,7 +305,23 @@
         "valore": "Frizione automatica, ABS"
       }
     ],
-    "lista-auto": "VW Golf, Honda Civic, Peugeot 308, Hyundai i30n, Alfa Romeo Giulietta",
+    "lista_auto": [
+      {
+        "modello": "VW Golf"
+      },
+      {
+        "modello": "Honda Civic"
+      },
+      {
+        "modello": "Peugeot 308"
+      },
+      {
+        "modello": "Hyundai i30n"
+      },
+      {
+        "modello": "Alfa Romeo Giulietta"
+      }
+    ],
     "pilotiIscritti": [
       {
         "idUt": 230,
@@ -340,16 +362,16 @@
         "auto": "Alfa Romeo Giulietta"
       },
       {
-        "idUt": 4,
-        "nome": "Ugo Federico Bagnasco",
-        "team": "Busters eRacing Team",
-        "auto": "Honda Civic"
-      },
-      {
         "idUt": 234,
         "nome": "Enrico Sancini",
         "team": "Handy Racing Team",
         "auto": "VW Golf"
+      },
+      {
+        "idUt": 4,
+        "nome": "aaa bbbb",
+        "team": "uno",
+        "auto": "Honda Civic"
       }
     ]
   }

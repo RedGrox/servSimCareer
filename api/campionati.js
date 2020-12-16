@@ -21,7 +21,6 @@ const APIOWA = "0a3befe2c8971b2a420fe94c981fcd6f";
   }
 */
 router.get("/dateUt/:idUt", (req, res, next) => {
-  console.log("request " + Date.now().toString());
   let campionati = getCampionati();
   let idUt = parseInt(req.params.idUt, 10);
   let userRaces = [];
@@ -76,6 +75,73 @@ router.get("/dateUt/:idUt", (req, res, next) => {
     return 0;
   });
   res.status(200).json(userRaces);
+});
+
+router.post("/removeFromChamp/:idChamp/:idUt", (req, res, next) => {
+  let campionati = getCampionati();
+  let idChamp = req.params.idChamp;
+  let idUt = parseInt(req.params.idUt, 10);
+  let boolChanged = false;
+  for (let i = 0; i < campionati.length; i++) {
+    if (campionati[i].id == idChamp) {
+      campionati[i].pilotiIscritti = _.filter(
+        campionati[i].pilotiIscritti,
+        (item) => {
+          if (item.idUt == idUt) {
+            boolChanged = true;
+          }
+          return item.idUt != idUt;
+        }
+      );
+    }
+  }
+  if (boolChanged) {
+    fs.writeFileSync(
+      "DB/campionati.json",
+      JSON.stringify(campionati, null, 2),
+      "utf8"
+    );
+    res.status(200).json({ updated: true });
+  } else {
+    res.status(400).json({ updated: false });
+  }
+});
+
+router.post("/addInChamp/", (req, res, next) => {
+  console.log("addInChamp");
+  let bodyReq = req.body;
+  console.log(bodyReq);
+  let campionati = getCampionati();
+  let idChamp = bodyReq.idChamp;
+  let idUt = parseInt(bodyReq.idUt, 10);
+  let nomeUt = getNome(idUt);
+  let boolExist = false;
+  for (let i = 0; i < campionati.length; i++) {
+    if (campionati[i].id == idChamp) {
+      for (let j = 0; j < campionati[i].pilotiIscritti.length; j++) {
+        if (campionati[i].pilotiIscritti[j].idUt == idUt) {
+          boolExist = true;
+        }
+      }
+      if (!boolExist)
+        campionati[i].pilotiIscritti.push({
+          idUt: idUt,
+          nome: nomeUt,
+          team: bodyReq.team,
+          auto: bodyReq.auto,
+        });
+    }
+  }
+  if (!boolExist) {
+    fs.writeFileSync(
+      "DB/campionati.json",
+      JSON.stringify(campionati, null, 2),
+      "utf8"
+    );
+    res.status(200).json({ updated: true });
+  } else {
+    res.status(400).json({ updated: false });
+  }
 });
 
 router.post("/addPref/", (req, res, next) => {
@@ -408,6 +474,21 @@ function existId(id, campionati) {
     }
   }
   return index;
+}
+
+function getNome(idUt) {
+  let rawdata = fs.readFileSync("DB/utenti.json");
+  utenti = JSON.parse(rawdata);
+  let nomeUt = "";
+  if (utenti != undefined) {
+    for (let i = 0; i < utenti.length; i++) {
+      if (idUt == utenti[i].id) {
+        nomeUt = utenti[i].nome + " " + utenti[i].cognome;
+        i = utenti.length;
+      }
+    }
+  }
+  return nomeUt;
 }
 
 module.exports = router;
